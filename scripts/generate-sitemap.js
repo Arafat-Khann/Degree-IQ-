@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 const OUT = path.resolve(process.cwd(), 'public', 'sitemap.xml')
-const baseUrl = process.env.SITE_URL || 'https://yourdomain.com'
+const baseUrl = process.env.SITE_URL || 'https://degree-iq.vercel.app'
 
 function listDegreePages() {
   const dataDir = path.resolve(process.cwd(), 'src', 'data')

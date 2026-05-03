@@ -56,23 +56,23 @@ export function LandingPage() {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://yourdomain.com/#website",
-      "url": "https://yourdomain.com/",
+      "@id": "https://degree-iq.vercel.app/#website",
+      "url": "https://degree-iq.vercel.app/",
       "name": "DegreeIQ",
       "description": "Visualize your degree roadmap, optimize course selection, and maximize your GPA with intelligent recommendations.",
-      "publisher": { "@id": "https://yourdomain.com/#org" }
+      "publisher": { "@id": "https://degree-iq.vercel.app/#org" }
     },
     {
       "@type": "Organization",
-      "@id": "https://yourdomain.com/#org",
+      "@id": "https://degree-iq.vercel.app/#org",
       "name": "DegreeIQ",
-      "url": "https://yourdomain.com/",
-      "logo": "https://yourdomain.com/images/og-home.svg"
+      "url": "https://degree-iq.vercel.app/",
+      "logo": "https://degree-iq.vercel.app/images/og-home.svg"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourdomain.com/" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://degree-iq.vercel.app/" }
       ]
     }
   ]
