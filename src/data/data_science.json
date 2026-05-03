@@ -1,0 +1,932 @@
+{
+	"degree": "Data Science",
+	"code": "DS",
+	"classCode": "BDS",
+	"totalCredits": 133,
+	"duration": "4 years",
+	"semesters": 8,
+	"university": "COMSATS University Islamabad",
+	"department": "Computer Science",
+	"session": "Spring 2024",
+	"semesters_plan": [
+		{
+			"semester": 1,
+			"courses": [
+				{
+					"code": "CSC103",
+					"name": "Programming Fundamentals",
+					"credits": 4,
+					"type": "computing_core",
+					"prerequisites": []
+				},
+				{
+					"code": "CSC101",
+					"name": "Applications of Information and Communication Technologies",
+					"credits": 3,
+					"type": "general_education",
+					"prerequisites": []
+				},
+				{
+					"code": "HUM104",
+					"name": "Functional English",
+					"credits": 3,
+					"type": "general_education",
+					"prerequisites": []
+				},
+				{
+					"code": "HUM208",
+					"name": "Civics and Community Engagement",
+					"credits": 2,
+					"type": "general_education",
+					"prerequisites": []
+				},
+				{
+					"code": "HUM112",
+					"name": "Islamic Studies / Ethics",
+					"credits": 2,
+					"type": "general_education",
+					"prerequisites": []
+				},
+				{
+					"code": "HUM130",
+					"name": "Fundamentals of Sociology",
+					"credits": 2,
+					"type": "general_education",
+					"prerequisites": []
+				},
+				{
+					"code": "HUM161",
+					"name": "Understanding of Holy Quran - I (Fehm-e-Quran-I)",
+					"credits": 1,
+					"type": "general_education",
+					"prerequisites": []
+				}
+			]
+		},
+		{
+			"semester": 2,
+			"courses": [
+				{
+					"code": "CSC241",
+					"name": "Object Oriented Programming",
+					"credits": 4,
+					"type": "computing_core",
+					"prerequisites": [
+						"CSC103"
+					]
+				},
+				{
+					"code": "CSC102",
+					"name": "Discrete Structures",
+					"credits": 3,
+					"type": "quantitative_reasoning",
+					"prerequisites": []
+				},
+				{
+					"code": "HUM120",
+					"name": "Expository Writing",
+					"credits": 3,
+					"type": "general_education",
+					"prerequisites": []
+				},
+				{
+					"code": "HUM121",
+					"name": "Technical and Business Writing",
+					"credits": 3,
+					"type": "interdisciplinary",
+					"prerequisites": []
+				},
+				{
+					"code": "BIO310",
+					"name": "Natural Sciences Elective (e.g. Introduction to Bioinformatics)",
+					"credits": 3,
+					"type": "natural_sciences",
+					"prerequisites": []
+				},
+				{
+					"code": "HUM101",
+					"name": "Understanding Quran",
+					"credits": 0,
+					"type": "general_education",
+					"prerequisites": []
+				}
+			]
+		},
+		{
+			"semester": 3,
+			"courses": [
+				{
+					"code": "EEE240",
+					"name": "Fundamentals of Digital Logic Design",
+					"credits": 3,
+					"type": "computing_core",
+					"prerequisites": []
+				},
+				{
+					"code": "CSC211",
+					"name": "Data Structures",
+					"credits": 4,
+					"type": "computing_core",
+					"prerequisites": [
+						"CSC103"
+					]
+				},
+				{
+					"code": "CSC270",
+					"name": "Database Systems",
+					"credits": 4,
+					"type": "computing_core",
+					"prerequisites": []
+				},
+				{
+					"code": "DSC293",
+					"name": "Data Science Fundamentals",
+					"credits": 3,
+					"type": "domain_core",
+					"prerequisites": []
+				},
+				{
+					"code": "MTH104",
+					"name": "Calculus and Analytic Geometry",
+					"credits": 3,
+					"type": "quantitative_reasoning",
+					"prerequisites": []
+				}
+			]
+		},
+		{
+			"semester": 4,
+			"courses": [
+				{
+					"code": "CSC291",
+					"name": "Software Engineering",
+					"credits": 3,
+					"type": "computing_core",
+					"prerequisites": []
+				},
+				{
+					"code": "CSC232",
+					"name": "Information Security",
+					"credits": 3,
+					"type": "computing_core",
+					"prerequisites": []
+				},
+				{
+					"code": "DSC306",
+					"name": "Data Mining",
+					"credits": 3,
+					"type": "domain_core",
+					"prerequisites": []
+				},
+				{
+					"code": "AIC354",
+					"name": "Machine Learning Fundamentals",
+					"credits": 3,
+					"type": "domain_elective",
+					"prerequisites": []
+				},
+				{
+					"code": "MTH262",
+					"name": "Statistics and Probability Theory",
+					"credits": 3,
+					"type": "interdisciplinary",
+					"prerequisites": []
+				},
+				{
+					"code": "HUM113",
+					"name": "Ideology and Constitution of Pakistan",
+					"credits": 2,
+					"type": "general_education",
+					"prerequisites": []
+				},
+				{
+					"code": "HUM121",
+					"name": "Technical and Business Writing",
+					"credits": 3,
+					"type": "interdisciplinary",
+					"prerequisites": []
+				}
+			]
+		},
+		{
+			"semester": 5,
+			"courses": [
+				{
+					"code": "CSC262",
+					"name": "Artificial Intelligence",
+					"credits": 3,
+					"type": "computing_core",
+					"prerequisites": []
+				},
+				{
+					"code": "CSC275",
+					"name": "Computer Networks",
+					"credits": 3,
+					"type": "computing_core",
+					"prerequisites": []
+				},
+				{
+					"code": "CSC301",
+					"name": "Design and Analysis of Algorithms",
+					"credits": 3,
+					"type": "computing_core",
+					"prerequisites": [
+						"CSC211"
+					]
+				},
+				{
+					"code": "CSC323",
+					"name": "Operating Systems",
+					"credits": 3,
+					"type": "computing_core",
+					"prerequisites": []
+				},
+				{
+					"code": "DSC327",
+					"name": "Data Visualization Techniques",
+					"credits": 3,
+					"type": "domain_core",
+					"prerequisites": []
+				}
+			]
+		},
+		{
+			"semester": 6,
+			"courses": [
+				{
+					"code": "CSC325",
+					"name": "Computer Organization and Assembly Language",
+					"credits": 3,
+					"type": "computing_core",
+					"prerequisites": [
+						"EEE240"
+					]
+				},
+				{
+					"code": "DSC300",
+					"name": "Statistical Methods in Data Science",
+					"credits": 3,
+					"type": "domain_core",
+					"prerequisites": [
+						"MTH262"
+					]
+				},
+				{
+					"code": "DSC354",
+					"name": "Data Warehousing and Business Intelligence",
+					"credits": 3,
+					"type": "domain_core",
+					"prerequisites": [
+						"CSC270"
+					]
+				},
+				{
+					"code": "DSC415",
+					"name": "Big Data Analytics",
+					"credits": 3,
+					"type": "domain_core",
+					"prerequisites": [
+						"DSC306"
+					]
+				},
+				{
+					"code": "ELEC1",
+					"name": "Domain Elective I",
+					"credits": 3,
+					"type": "domain_elective",
+					"prerequisites": []
+				},
+				{
+					"code": "HUM117",
+					"name": "Pakistan Studies",
+					"credits": 2,
+					"type": "general_education",
+					"prerequisites": []
+				}
+			]
+		},
+		{
+			"semester": 7,
+			"courses": [
+				{
+					"code": "MTH231",
+					"name": "Linear Algebra",
+					"credits": 3,
+					"type": "interdisciplinary",
+					"prerequisites": []
+				},
+				{
+					"code": "MTH105",
+					"name": "Multivariable Calculus",
+					"credits": 3,
+					"type": "interdisciplinary",
+					"prerequisites": [
+						"MTH104"
+					]
+				},
+				{
+					"code": "MGT250",
+					"name": "Introduction to Entrepreneurship",
+					"credits": 2,
+					"type": "general_education",
+					"prerequisites": []
+				},
+				{
+					"code": "ARTS1",
+					"name": "Arts & Humanities Elective",
+					"credits": 2,
+					"type": "arts_humanities",
+					"prerequisites": []
+				},
+				{
+					"code": "ELEC2",
+					"name": "Domain Elective II",
+					"credits": 3,
+					"type": "domain_elective",
+					"prerequisites": []
+				},
+				{
+					"code": "ELEC3",
+					"name": "Domain Elective III",
+					"credits": 3,
+					"type": "domain_elective",
+					"prerequisites": []
+				}
+			]
+		},
+		{
+			"semester": 8,
+			"courses": [
+				{
+					"code": "DSC395",
+					"name": "Field Experience / Internship",
+					"credits": 3,
+					"type": "internship",
+					"prerequisites": []
+				},
+				{
+					"code": "DSC498",
+					"name": "Final Year Project I",
+					"credits": 2,
+					"type": "capstone",
+					"prerequisites": [
+						"CSC241",
+						"CSC270",
+						"CSC291"
+					]
+				},
+				{
+					"code": "DSC499",
+					"name": "Final Year Project II",
+					"credits": 4,
+					"type": "capstone",
+					"prerequisites": [
+						"DSC498"
+					]
+				},
+				{
+					"code": "ELEC4",
+					"name": "Domain Elective IV",
+					"credits": 3,
+					"type": "domain_elective",
+					"prerequisites": []
+				},
+				{
+					"code": "ELEC5",
+					"name": "Domain Elective V",
+					"credits": 3,
+					"type": "domain_elective",
+					"prerequisites": []
+				},
+				{
+					"code": "ELEC6",
+					"name": "Domain Elective VI",
+					"credits": 3,
+					"type": "domain_elective",
+					"prerequisites": []
+				},
+				{
+					"code": "ELEC7",
+					"name": "Domain Elective VII",
+					"credits": 3,
+					"type": "domain_elective",
+					"prerequisites": []
+				}
+			]
+		}
+	],
+	"domain_core": [
+		{
+			"code": "DSC293",
+			"name": "Data Science Fundamentals",
+			"credits": 3,
+			"type": "domain_core",
+			"prerequisites": []
+		},
+		{
+			"code": "DSC300",
+			"name": "Statistical Methods in Data Science",
+			"credits": 3,
+			"type": "domain_core",
+			"prerequisites": [
+				"MTH262"
+			]
+		},
+		{
+			"code": "DSC306",
+			"name": "Data Mining",
+			"credits": 3,
+			"type": "domain_core",
+			"prerequisites": []
+		},
+		{
+			"code": "DSC327",
+			"name": "Data Visualization Techniques",
+			"credits": 3,
+			"type": "domain_core",
+			"prerequisites": []
+		},
+		{
+			"code": "DSC354",
+			"name": "Data Warehousing and Business Intelligence",
+			"credits": 3,
+			"type": "domain_core",
+			"prerequisites": [
+				"CSC270"
+			]
+		},
+		{
+			"code": "DSC415",
+			"name": "Big Data Analytics",
+			"credits": 3,
+			"type": "domain_core",
+			"prerequisites": [
+				"DSC306"
+			]
+		}
+	],
+	"domain_electives": [
+		{
+			"code": "AIC354",
+			"name": "Machine Learning Fundamentals",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "AIC365",
+			"name": "Natural Language Processing",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "AIC378",
+			"name": "Speech Processing",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "AIC380",
+			"name": "Artificial Neural Networks and Deep Learning",
+			"credits": 3,
+			"prerequisites": [
+				"CSC262"
+			]
+		},
+		{
+			"code": "CSC303",
+			"name": "Mobile Application Development",
+			"credits": 3,
+			"prerequisites": [
+				"CSC241"
+			]
+		},
+		{
+			"code": "CSC316",
+			"name": "Advance Database Systems",
+			"credits": 3,
+			"prerequisites": [
+				"CSC270"
+			]
+		},
+		{
+			"code": "CSC335",
+			"name": "Game Design",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "CSC336",
+			"name": "Web Technologies",
+			"credits": 3,
+			"prerequisites": [
+				"CSC241"
+			]
+		},
+		{
+			"code": "CSC337",
+			"name": "Advanced Web Technologies",
+			"credits": 3,
+			"prerequisites": [
+				"CSC336"
+			]
+		},
+		{
+			"code": "CSC353",
+			"name": "Computer Graphics",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "CSC365",
+			"name": "HCI and Computer Graphics",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "CSC412",
+			"name": "Advanced Programming",
+			"credits": 3,
+			"prerequisites": [
+				"CSC241"
+			]
+		},
+		{
+			"code": "CSC417",
+			"name": "E-Commerce and Digital Marketing",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "CSC418",
+			"name": "DevOps for Cloud Computing",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "CSC471",
+			"name": "Distributed Database Systems",
+			"credits": 3,
+			"prerequisites": [
+				"CSC270"
+			]
+		},
+		{
+			"code": "CSC495",
+			"name": "Game Development",
+			"credits": 3,
+			"prerequisites": [
+				"CSC241"
+			]
+		},
+		{
+			"code": "CSC496",
+			"name": "Game Engine Development",
+			"credits": 3,
+			"prerequisites": [
+				"CSC495"
+			]
+		},
+		{
+			"code": "DSC350",
+			"name": "Topics in Data Science I",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC373",
+			"name": "Social Network Modelling and Analytics",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC403",
+			"name": "Social Media Mining",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC406",
+			"name": "Business Process Analysis",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC407",
+			"name": "Platform and Architecture for Data Science",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC408",
+			"name": "Privacy Preservation",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC410",
+			"name": "Cloud Computing",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC412",
+			"name": "Text Mining",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC421",
+			"name": "Deep Reinforcement Learning",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC425",
+			"name": "Time Series Analysis and Prediction",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC429",
+			"name": "Exploratory Data Analysis and Visualization",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC434",
+			"name": "Graph Analytics for Big Data",
+			"credits": 3,
+			"prerequisites": []
+		},
+		{
+			"code": "DSC483",
+			"name": "Topics in Data Science II",
+			"credits": 3,
+			"prerequisites": []
+		}
+	],
+	"general_education": [
+		{
+			"code": "HUM101",
+			"name": "Understanding Quran",
+			"credits": 0,
+			"type": "general_education",
+			"prerequisites": []
+		},
+		{
+			"code": "HUM104",
+			"name": "Functional English",
+			"credits": 3,
+			"type": "general_education",
+			"prerequisites": []
+		},
+		{
+			"code": "HUM112",
+			"name": "Islamic Studies",
+			"credits": 2,
+			"type": "general_education",
+			"prerequisites": []
+		},
+		{
+			"code": "HUM113",
+			"name": "Ideology and Constitution of Pakistan",
+			"credits": 2,
+			"type": "general_education",
+			"prerequisites": []
+		},
+		{
+			"code": "HUM117",
+			"name": "Pakistan Studies",
+			"credits": 2,
+			"type": "general_education",
+			"prerequisites": []
+		},
+		{
+			"code": "HUM120",
+			"name": "Expository Writing",
+			"credits": 3,
+			"type": "general_education",
+			"prerequisites": []
+		},
+		{
+			"code": "HUM141",
+			"name": "Seerah of Holy Prophet S.A.W.",
+			"credits": 0,
+			"type": "general_education",
+			"prerequisites": []
+		},
+		{
+			"code": "MGT250",
+			"name": "Introduction to Entrepreneurship",
+			"credits": 2,
+			"type": "general_education",
+			"prerequisites": []
+		},
+		{
+			"code": "CSC101",
+			"name": "Applications of Information and Communication Technologies",
+			"credits": 3,
+			"type": "general_education",
+			"prerequisites": []
+		},
+		{
+			"code": "HUM208",
+			"name": "Civics and Community Engagement",
+			"credits": 2,
+			"type": "general_education",
+			"prerequisites": []
+		}
+	],
+	"interdisciplinary": [
+		{
+			"code": "HUM121",
+			"name": "Technical and Business Writing",
+			"credits": 3,
+			"type": "interdisciplinary",
+			"prerequisites": []
+		},
+		{
+			"code": "MTH105",
+			"name": "Multivariable Calculus",
+			"credits": 3,
+			"type": "interdisciplinary",
+			"prerequisites": [
+				"MTH104"
+			]
+		},
+		{
+			"code": "MTH231",
+			"name": "Linear Algebra",
+			"credits": 3,
+			"type": "interdisciplinary",
+			"prerequisites": []
+		},
+		{
+			"code": "MTH262",
+			"name": "Statistics and Probability Theory",
+			"credits": 3,
+			"type": "interdisciplinary",
+			"prerequisites": []
+		}
+	],
+	"arts_humanities_choices": [
+		{
+			"code": "ADA111",
+			"name": "History and Theory of Art and Culture I",
+			"credits": 2
+		},
+		{
+			"code": "ARC108",
+			"name": "Art Appreciation",
+			"credits": 2
+		},
+		{
+			"code": "ARC351",
+			"name": "Calligraphic Arts",
+			"credits": 2
+		},
+		{
+			"code": "CSC210",
+			"name": "Professional Practices",
+			"credits": 2
+		},
+		{
+			"code": "HUM310",
+			"name": "Islamic History",
+			"credits": 2
+		}
+	],
+	"quantitative_reasoning_choices": [
+		{
+			"code": "CSC102",
+			"name": "Discrete Structures",
+			"credits": 3
+		},
+		{
+			"code": "MTH103",
+			"name": "Exploring Quantitative Skills",
+			"credits": 3
+		},
+		{
+			"code": "MTH104",
+			"name": "Calculus and Analytic Geometry",
+			"credits": 3
+		},
+		{
+			"code": "MTH114",
+			"name": "Tools for Quantitative Reasoning",
+			"credits": 3
+		}
+	],
+	"natural_sciences_choices": [
+		{
+			"code": "BIO100",
+			"name": "Fundamentals of Biology",
+			"credits": 3
+		},
+		{
+			"code": "BIO310",
+			"name": "Introduction to Bioinformatics",
+			"credits": 3
+		},
+		{
+			"code": "BIO321",
+			"name": "Fundamentals of Genetics",
+			"credits": 3
+		},
+		{
+			"code": "CHM100",
+			"name": "Introduction to Chemistry",
+			"credits": 3
+		},
+		{
+			"code": "PHY124",
+			"name": "Applied Physics",
+			"credits": 3
+		}
+	],
+	"social_sciences_choices": [
+		{
+			"code": "HUM122",
+			"name": "Fundamentals of Psychology",
+			"credits": 2
+		},
+		{
+			"code": "HUM130",
+			"name": "Fundamentals of Sociology",
+			"credits": 2
+		},
+		{
+			"code": "HUM131",
+			"name": "Anthropology",
+			"credits": 2
+		},
+		{
+			"code": "HUM209",
+			"name": "Fundamentals of Political Science",
+			"credits": 2
+		},
+		{
+			"code": "HUM222",
+			"name": "Fundamentals of International Relations",
+			"credits": 2
+		}
+	],
+	"supporting_elective_choices": [
+		{
+			"code": "ECO484",
+			"name": "Project Planning and Monitoring",
+			"credits": 3
+		},
+		{
+			"code": "HUM220",
+			"name": "Introduction to Psychology",
+			"credits": 3
+		},
+		{
+			"code": "HUM221",
+			"name": "International Relations",
+			"credits": 3
+		},
+		{
+			"code": "HUM430",
+			"name": "French",
+			"credits": 3
+		},
+		{
+			"code": "HUM431",
+			"name": "German",
+			"credits": 3
+		},
+		{
+			"code": "HUM432",
+			"name": "Arabic",
+			"credits": 3
+		},
+		{
+			"code": "HUM434",
+			"name": "Chinese",
+			"credits": 3
+		},
+		{
+			"code": "MGT131",
+			"name": "Financial Accounting",
+			"credits": 3
+		},
+		{
+			"code": "MGT210",
+			"name": "Fundamentals of Marketing",
+			"credits": 3
+		},
+		{
+			"code": "MGT350",
+			"name": "Human Resource Management",
+			"credits": 3
+		},
+		{
+			"code": "MGT513",
+			"name": "New Product Development",
+			"credits": 3
+		}
+	]
+}

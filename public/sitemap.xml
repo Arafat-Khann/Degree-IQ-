@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yourdomain.com/</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/onboarding</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/dashboard</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/degree/ai</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/degree/cs</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/degree/cybersecurity</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/degree/data_science</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/degree/index</loc>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/degree/software_engineering</loc>
+  </url>
+</urlset>

@@ -1,0 +1,34 @@
+{
+  "programs": [
+    {
+      "code": "BCS",
+      "title": "Bachelor of Computer Science",
+      "short": "BCS",
+      "years": 4
+    },
+    {
+      "code": "BAI",
+      "title": "Bachelor of Artificial Intelligence",
+      "short": "BAI",
+      "years": 4
+    },
+    {
+      "code": "BDS",
+      "title": "Bachelor of Data Science",
+      "short": "BDS",
+      "years": 4
+    },
+    {
+      "code": "BCT",
+      "title": "Bachelor of Cyber Security",
+      "short": "BCT",
+      "years": 4
+    },
+    {
+      "code": "BSE",
+      "title": "Bachelor of Software Engineering",
+      "short": "BSE",
+      "years": 4
+    }
+  ]
+}
