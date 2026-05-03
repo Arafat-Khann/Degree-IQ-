@@ -21,12 +21,12 @@ export function Navbar({ onBack = null, onReset = null, showBack = false, showRe
             alt="DegreeIQ"
             className="h-[36px] w-[36px] sm:h-[42px] sm:w-[42px] object-contain shrink-0"
           />
-          <span className="text-[clamp(1rem,3vw,1.125rem)] font-semibold tracking-[-0.02em] text-[#0F172A]\">DegreeIQ</span>
+          <span className="text-[clamp(1rem,3vw,1.125rem)] font-semibold tracking-[-0.02em] text-[#0F172A]">DegreeIQ</span>
         </Link>
 
         <div className="flex items-center gap-[8px] sm:gap-[10px] ml-auto min-w-0">
           {degree && (
-              <span className="hidden sm:inline text-[14px] text-[#475569] whitespace-nowrap mr-[4px]">
+            <span className="hidden sm:inline text-[14px] text-[#475569] whitespace-nowrap mr-[4px]">
               {degreeMap[degree] || degree}
             </span>
           )}
