@@ -4,6 +4,7 @@ import { LandingPage } from './pages/Landing'
 import { OnboardingPage } from './pages/Onboarding'
 import { Dashboard } from './pages/Dashboard'
 import { useContext, useEffect } from 'react'
+import { ScrollToTop } from './components/ScrollToTop'
 
 function AppRoutes() {
   const { onboardingComplete, isLoading, degree } = useContext(StudentContext)
@@ -25,6 +26,7 @@ function AppRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <StudentProvider>
         <AppRoutes />
       </StudentProvider>
