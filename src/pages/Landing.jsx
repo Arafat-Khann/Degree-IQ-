@@ -99,7 +99,7 @@ export function LandingPage() {
       <main id="main-content" className="pt-[64px] min-h-0 lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 items-start lg:items-center w-full max-w-[1200px] mx-auto px-[16px] sm:px-[24px] lg:px-[48px] py-[40px] sm:py-[60px] lg:py-[140px_48px_80px] gap-[32px] sm:gap-[48px] lg:gap-[80px]">
         {/* LEFT */}
         <div className="hero-left w-full">
-          <div className="opacity-0 translate-y-[20px] animate-up mt-[0px]" style={{ animationDelay: '0.1s' }}>
+          <div className="opacity-0 translate-y-[20px] animate-up mt-[20px] sm:mt-[32px] lg:mt-[48px]" style={{ animationDelay: '0.1s' }}>
             <h1 className="text-[clamp(1.75rem,6vw,3.5rem)] font-bold leading-[1.2] tracking-[-0.02em] text-[#0F2145] mb-[12px] sm:mb-[16px] lg:mb-[24px]">
               Plan your<br />
               degree.
