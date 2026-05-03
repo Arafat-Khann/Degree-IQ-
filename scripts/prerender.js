@@ -9,7 +9,6 @@ import fs from 'fs'
 import path from 'path'
 import { spawn } from 'child_process'
 import http from 'http'
-import { chromium } from 'playwright-chromium'
 
 // Skip prerender when running inside Vercel build environment
 if (process.env.VERCEL) {
@@ -57,6 +56,8 @@ async function run() {
     process.exit(1)
   }
 
+  // Dynamically import Playwright only when needed (avoids loading in Vercel builds)
+  const { chromium } = await import('playwright-chromium')
   const browser = await chromium.launch()
   const page = await browser.newPage()
 
