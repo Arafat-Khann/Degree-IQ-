@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "npm run generate-sitemap",
     "build": "vite build",
     "preview": "vite preview",
     "generate-sitemap": "node scripts/generate-sitemap.js",
-    "prerender": "node scripts/prerender.js"
-  , "postbuild": "npm run prerender"
+    "prerender": "node scripts/prerender.js",
+    "postbuild": "npm run prerender"
   },
   "dependencies": {
     "react": "^18.2.0",

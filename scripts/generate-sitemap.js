@@ -9,7 +9,7 @@ function listDegreePages() {
   if (!fs.existsSync(dataDir)) return []
   return fs
     .readdirSync(dataDir)
-    .filter(f => f.endsWith('.json'))
+    .filter(f => f.endsWith('.json') && f !== 'index.json')
     .map(f => `/degree/${path.basename(f, '.json')}`)
 }
 
