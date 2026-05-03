@@ -96,62 +96,62 @@ export function LandingPage() {
       </nav>
 
       {/* HERO */}
-      <main id="main-content" className="pt-[64px] min-h-screen grid grid-cols-1 lg:grid-cols-2 items-center max-w-[1200px] mx-auto px-[24px] sm:px-[48px] py-[80px_24px_60px] sm:py-[140px_48px_80px] gap-[40px] sm:gap-[80px]">
+      <main id="main-content" className="pt-[64px] min-h-screen grid grid-cols-1 lg:grid-cols-2 items-start lg:items-center w-full max-w-[1200px] mx-auto px-[16px] sm:px-[24px] lg:px-[48px] py-[40px] sm:py-[60px] lg:py-[140px_48px_80px] gap-[32px] sm:gap-[48px] lg:gap-[80px]">
         {/* LEFT */}
-        <div className="hero-left">
-          <div className="opacity-0 translate-y-[20px] animate-up mt-[0px] sm:mt-[32px]" style={{ animationDelay: '0.1s' }}>
-            <h1 className="text-[clamp(1.8rem,5vw,4rem)] font-bold leading-[1.1] tracking-[-0.03em] text-[#0F2145] mb-[16px] sm:mb-[24px]">
-              Plan your degree.<br />
-              <em className="font-normal text-[#1A3464]">Boost your CGPA.</em>
+        <div className="hero-left w-full">
+          <div className="opacity-0 translate-y-[20px] animate-up mt-[0px]" style={{ animationDelay: '0.1s' }}>
+            <h1 className="text-[clamp(1.75rem,6vw,3.5rem)] font-bold leading-[1.2] tracking-[-0.02em] text-[#0F2145] mb-[12px] sm:mb-[16px] lg:mb-[24px]">
+              Plan your<br />
+              degree.
+              <em className="block font-normal text-[#1A3464]">Boost your CGPA.</em>
             </h1>
           </div>
 
           <div className="opacity-0 translate-y-[20px] animate-up" style={{ animationDelay: '0.22s' }}>
-            <p className="text-[0.95rem] sm:text-[1rem] text-[#6B7A99] leading-[1.75] max-w-[420px] mb-[32px] sm:mb-[40px] font-normal">
+            <p className="text-[0.9rem] sm:text-[0.95rem] lg:text-[1rem] text-[#6B7A99] leading-[1.6] sm:leading-[1.7] max-w-full sm:max-w-[420px] mb-[24px] sm:mb-[32px] lg:mb-[40px] font-normal">
               DegreeIQ is your personal academic planning assistant. Visualize your entire degree roadmap, optimize your course selections, and get AI-driven insights to maximize your GPA.
             </p>
           </div>
 
           <div className="opacity-0 translate-y-[20px] animate-up" style={{ animationDelay: '0.34s' }}>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-[16px] mb-[40px] sm:mb-[56px]">
+            <div className="flex flex-col gap-[12px] sm:gap-[16px] mb-[32px] sm:mb-[40px] lg:mb-[56px]">
               <button
                 onClick={() => navigate('/onboarding')}
                 aria-label="Get started with DegreeIQ onboarding"
-                className="inline-flex items-center justify-center sm:justify-start gap-[8px] bg-[#0F2145] text-white font-medium px-[24px] sm:px-[26px] py-[12px] sm:py-[13px] rounded-[8px] border-none cursor-pointer text-[0.9rem] leading-none whitespace-nowrap transition-all hover:bg-[#1A3464] hover:translate-y-[-1px] tracking-[-0.01em]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-[8px] bg-[#0F2145] text-white font-medium px-[20px] sm:px-[26px] py-[11px] sm:py-[13px] rounded-[8px] border-none cursor-pointer text-[0.9rem] leading-none transition-all hover:bg-[#1A3464] hover:translate-y-[-1px] tracking-[-0.01em]"
               >
                 <span className="leading-none">Get Started</span>
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0">
                   <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
-              <span className="max-w-[210px] text-[0.75rem] sm:text-[0.78rem] leading-[1.35] text-[#6B7A99] text-center sm:text-left">
-                No account needed.<br />
-                Your data stays in your browser.
+              <span className="max-w-full sm:max-w-[210px] text-[0.8rem] sm:text-[0.78rem] leading-[1.4] text-[#6B7A99] text-center sm:text-left">
+                No account needed. Your data stays in your browser.
               </span>
             </div>
           </div>
 
-          <div className="opacity-0 translate-y-[20px] animate-up mt-[40px] sm:mt-[72px] pt-[20px] sm:pt-[24px] border-t border-[#E2E6F0]" style={{ animationDelay: '0.46s' }}>
-            <div className="flex flex-wrap gap-[24px] sm:gap-[32px]">
+          <div className="opacity-0 translate-y-[20px] animate-up mt-[24px] sm:mt-[48px] lg:mt-[72px] pt-[16px] sm:pt-[20px] lg:pt-[24px] border-t border-[#E2E6F0]" style={{ animationDelay: '0.46s' }}>
+            <div className="grid grid-cols-3 gap-[16px] sm:gap-[24px] lg:gap-[32px]">
               <div>
-                <div className="text-[clamp(1.3rem,4vw,1.7rem)] font-bold text-[#0F2145] leading-none mb-[3px] tracking-[-0.03em]">4yr</div>
-                <div className="text-[0.7rem] sm:text-[0.75rem] text-[#6B7A99] font-normal">Full degree roadmap</div>
+                <div className="text-[1.3rem] sm:text-[1.5rem] lg:text-[1.7rem] font-bold text-[#0F2145] leading-none mb-[2px] tracking-[-0.02em]">4yr</div>
+                <div className="text-[0.7rem] text-[#6B7A99] font-normal leading-tight">Full degree roadmap</div>
               </div>
               <div>
-                <div className="text-[clamp(1.3rem,4vw,1.7rem)] font-bold text-[#0F2145] leading-none mb-[3px] tracking-[-0.03em]">AI</div>
-                <div className="text-[0.7rem] sm:text-[0.75rem] text-[#6B7A99] font-normal">Smart course advisor</div>
+                <div className="text-[1.3rem] sm:text-[1.5rem] lg:text-[1.7rem] font-bold text-[#0F2145] leading-none mb-[2px] tracking-[-0.02em]">AI</div>
+                <div className="text-[0.7rem] text-[#6B7A99] font-normal leading-tight">Smart course advisor</div>
               </div>
               <div>
-                <div className="text-[clamp(1.3rem,4vw,1.7rem)] font-bold text-[#0F2145] leading-none mb-[3px] tracking-[-0.03em]">Free</div>
-                <div className="text-[0.7rem] sm:text-[0.75rem] text-[#6B7A99] font-normal">Always, no signup</div>
+                <div className="text-[1.3rem] sm:text-[1.5rem] lg:text-[1.7rem] font-bold text-[#0F2145] leading-none mb-[2px] tracking-[-0.02em]">Free</div>
+                <div className="text-[0.7rem] text-[#6B7A99] font-normal leading-tight">Always, no signup</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* RIGHT - DASHBOARD MOCKUP */}
-        <div className="hero-right relative flex items-center justify-center opacity-0 animate-fadeIn order-first lg:order-last" style={{ animationDelay: '0.3s' }}>
-          <div className="relative w-full max-w-[280px] sm:max-w-[400px] mx-auto lg:ml-auto">
+        {/* RIGHT - DASHBOARD MOCKUP - Hidden on mobile, shown on lg+ */}
+        <div className="hidden lg:flex hero-right relative items-center justify-center opacity-0 animate-fadeIn order-first lg:order-last" style={{ animationDelay: '0.3s' }}>
+          <div className="relative w-full max-w-[400px] ml-auto">
             {/* Shadow card behind */}
             <div className="absolute top-[14px] left-[14px] w-full h-full bg-[#E8ECF6] rounded-[20px]"></div>
 
@@ -250,11 +250,11 @@ export function LandingPage() {
             </div>
 
             {/* Floating AI tip */}
-            <div className="absolute bottom-[-18px] right-[-16px] sm:bottom-[-22px] sm:right-[-24px] z-[3] bg-[#0F2145] text-white rounded-[12px] px-[14px] sm:px-[16px] py-[10px] sm:py-[12px] max-w-[160px] sm:max-w-[188px] shadow-lg border border-white/8">
-              <div className="text-[0.55rem] sm:text-[0.6rem] font-bold tracking-[0.08em] uppercase opacity-45 mb-[5px] flex items-center gap-[5px]">
-                ✨ AI Advisor
+            <div className="absolute bottom-[-22px] right-[-24px] z-[3] bg-[#0F2145] text-white rounded-[12px] px-[16px] py-[12px] max-w-[188px] shadow-lg border border-white/8">
+              <div className="text-[0.6rem] font-bold tracking-[0.08em] uppercase opacity-45 mb-[5px] flex items-center gap-[5px]">
+                ✦ AI Advisor
               </div>
-              <div className="text-[0.7rem] sm:text-[0.77rem] leading-[1.5] font-normal">
+              <div className="text-[0.77rem] leading-[1.5] font-normal">
                 Repeating <strong>OOP</strong> could raise your CGPA by <strong>+0.12</strong> this semester.
               </div>
             </div>
@@ -263,12 +263,12 @@ export function LandingPage() {
       </main>
 
       {/* FEATURES */}
-      <section className="bg-[#F7F8FC] border-t border-[#E2E6F0] border-b px-[24px] sm:px-[48px] py-[60px] sm:py-[96px]">
+      <section className="bg-[#F7F8FC] border-t border-[#E2E6F0] border-b px-[16px] sm:px-[24px] lg:px-[48px] py-[48px] sm:py-[72px] lg:py-[96px]">
         <div className="max-w-[1200px] mx-auto">
           <div className="opacity-0 translate-y-[20px]" ref={el => revealRefs.current.push(el)}>
             <div className="text-[0.65rem] sm:text-[0.72rem] font-semibold tracking-[0.1em] uppercase text-[#0F2145] mb-[12px]">What's inside</div>
-            <h2 className="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-[#0F2145] leading-[1.2] tracking-[-0.03em] mb-[40px] sm:mb-[56px] max-w-[520px]">
-              Three tools that work<br />together for you
+            <h2 className="text-[clamp(1.4rem,5vw,2.5rem)] font-bold text-[#0F2145] leading-[1.2] tracking-[-0.02em] mb-[32px] sm:mb-[48px] lg:mb-[56px] max-w-full sm:max-w-[520px]">
+              Three tools that work together for you
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{ gap: '1px', backgroundColor: '#E2E6F0', border: '1px solid #E2E6F0', borderRadius: '16px', overflow: 'hidden' }} ref={el => revealRefs.current.push(el)}>
@@ -277,10 +277,10 @@ export function LandingPage() {
               { num: '02', title: 'Degree Planner', desc: 'Visualize your entire 4-year roadmap with course prerequisites, credit hours, and sequencing built in.' },
               { num: '03', title: 'Smart Advisor', desc: 'Get AI-powered insights on which courses to repeat and exactly how to boost your CGPA most efficiently.' },
             ].map((feat, i) => (
-              <div key={i} className="bg-white px-[20px] sm:px-[32px] py-[28px] sm:py-[36px] transition-all hover:bg-[#FAFBFF]">
-                <span className="block text-[1rem] sm:text-[1.1rem] text-[#6B7A99] mb-[16px] sm:mb-[20px]">{feat.num}</span>
-                <h3 className="text-[0.95rem] sm:text-[1rem] font-semibold text-[#0F2145] mb-[10px] tracking-[-0.01em]">{feat.title}</h3>
-                <p className="text-[0.8rem] sm:text-[0.85rem] text-[#6B7A99] leading-[1.7]">{feat.desc}</p>
+              <div key={i} className="bg-white px-[16px] sm:px-[24px] lg:px-[32px] py-[24px] sm:py-[28px] lg:py-[36px] transition-all hover:bg-[#FAFBFF]">
+                <span className="block text-[0.95rem] sm:text-[1rem] lg:text-[1.1rem] text-[#6B7A99] mb-[12px] sm:mb-[16px] lg:mb-[20px]">{feat.num}</span>
+                <h3 className="text-[0.9rem] sm:text-[0.95rem] lg:text-[1rem] font-semibold text-[#0F2145] mb-[8px] sm:mb-[10px] tracking-[-0.01em]">{feat.title}</h3>
+                <p className="text-[0.8rem] sm:text-[0.85rem] text-[#6B7A99] leading-[1.6] sm:leading-[1.7]">{feat.desc}</p>
               </div>
             ))}
           </div>
@@ -288,7 +288,7 @@ export function LandingPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-[#E2E6F0] px-[24px] sm:px-[48px] py-[20px] sm:py-[24px] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-[12px] text-center sm:text-left">
+      <footer className="border-t border-[#E2E6F0] px-[16px] sm:px-[24px] lg:px-[48px] py-[16px] sm:py-[20px] lg:py-[24px] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-[10px] sm:gap-[12px] text-center sm:text-left">
         <div className="font-bold text-[0.9rem] text-[#0F2145] tracking-[-0.02em]">DegreeIQ</div>
         <div className="text-[0.7rem] sm:text-[0.75rem] text-[#6B7A99]">Built by Arafat Khan &amp; Muhammad Talha [FA25] · COMSATS University Islamabad · 2025</div>
       </footer>

@@ -183,8 +183,8 @@ a:hover {
   }
 }
 
-/* Mobile phones (480px and below) */
-@media (max-width: 480px) {
+/* Mobile phones (640px and below) */
+@media (max-width: 640px) {
   html,
   body {
     font-size: 13px;
