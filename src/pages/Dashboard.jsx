@@ -64,7 +64,7 @@ export function Dashboard() {
 
       {/* Tab Navigation */}
       <div className="border-b border-[#E2E8F0] sticky top-[65px] z-30 bg-white">
-        <div className="max-w-[1280px] mx-auto px-[24px] flex gap-[32px]">
+        <div className="max-w-[1280px] mx-auto px-[16px] sm:px-[24px] flex gap-[16px] sm:gap-[32px] overflow-x-auto">
           {[
             { id: 'home', label: 'Home' },
             { id: 'planner', label: 'Planner' },
@@ -74,7 +74,7 @@ export function Dashboard() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`py-[16px] text-[14px] font-medium border-b-2 ${
+              className={`py-[14px] sm:py-[16px] text-[13px] sm:text-[14px] font-medium border-b-2 whitespace-nowrap ${
                 activeTab === tab.id
                   ? 'text-[#003F87] border-[#003F87]'
                   : 'text-[#94A3B8] border-transparent hover:text-[#475569]'
@@ -87,7 +87,7 @@ export function Dashboard() {
       </div>
 
       {/* Tab Content */}
-      <div className="max-w-[1280px] mx-auto px-[24px] py-[32px]">
+      <div className="max-w-[1280px] mx-auto px-[16px] sm:px-[24px] py-[24px] sm:py-[32px]">
         {activeTab === 'home' && <HomeTab />}
         {activeTab === 'planner' && <PlannerTab />}
         {activeTab === 'booster' && <GpaBoosterTab />}
@@ -95,9 +95,9 @@ export function Dashboard() {
       </div>
 
       {/* Footer */}
-      <div className="border-t border-[#E2E8F0] bg-[#F8FAFC] mt-[64px]">
-        <div className="max-w-[1280px] mx-auto px-[24px] py-[24px] text-center">
-          <p className="text-[12px] text-[#94A3B8]">
+      <div className="border-t border-[#E2E8F0] bg-[#F8FAFC] mt-[48px] sm:mt-[64px]">
+        <div className="max-w-[1280px] mx-auto px-[16px] sm:px-[24px] py-[20px] sm:py-[24px] text-center">
+          <p className="text-[11px] sm:text-[12px] text-[#94A3B8]">
             Built by Students · BS Computer Science · COMSATS University Islamabad · 2025
           </p>
         </div>
@@ -137,41 +137,41 @@ function HomeTab() {
 
   return (
     <div>
-      <div className="mb-[40px] pb-[24px] border-b border-[#E2E8F0]">
-        <p className="text-[14px] text-[#475569]">
+      <div className="mb-[32px] sm:mb-[40px] pb-[20px] sm:pb-[24px] border-b border-[#E2E8F0]">
+        <p className="text-[13px] sm:text-[14px] text-[#475569]">
           {getGreeting()}, here's your degree overview.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-[16px] mb-[48px] lg:grid-cols-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-[12px] sm:gap-[16px] mb-[40px] sm:mb-[48px] lg:grid-cols-4">
         <Card>
-          <div className="text-[12px] text-[#94A3B8] font-medium mb-[8px]">Current CGPA</div>
-          <div className="text-[32px] font-bold text-[#003F87]">{cgpa}</div>
-          <div className="text-[12px] text-[#94A3B8] mt-[12px]">Target: {targetGpa.toFixed(2)}</div>
+          <div className="text-[11px] sm:text-[12px] text-[#94A3B8] font-medium mb-[8px]">Current CGPA</div>
+          <div className="text-[28px] sm:text-[32px] font-bold text-[#003F87]">{cgpa}</div>
+          <div className="text-[11px] sm:text-[12px] text-[#94A3B8] mt-[12px]">Target: {targetGpa.toFixed(2)}</div>
         </Card>
 
         <Card>
-          <div className="text-[12px] text-[#94A3B8] font-medium mb-[8px]">Projected CGPA</div>
-          <div className="text-[32px] font-bold text-[#003F87]">{projectedCGPA}</div>
-          <div className="text-[12px] text-[#94A3B8] mt-[12px]">With ongoing semester grades</div>
+          <div className="text-[11px] sm:text-[12px] text-[#94A3B8] font-medium mb-[8px]">Projected CGPA</div>
+          <div className="text-[28px] sm:text-[32px] font-bold text-[#003F87]">{projectedCGPA}</div>
+          <div className="text-[11px] sm:text-[12px] text-[#94A3B8] mt-[12px]">With ongoing semester grades</div>
         </Card>
 
         <Card>
-          <div className="text-[12px] text-[#94A3B8] font-medium mb-[8px]">Credits Completed</div>
-          <div className="text-[32px] font-bold text-[#003F87]">{completedCredits}</div>
-          <div className="text-[12px] text-[#94A3B8] mt-[12px]">of 133 total</div>
+          <div className="text-[11px] sm:text-[12px] text-[#94A3B8] font-medium mb-[8px]">Credits Completed</div>
+          <div className="text-[28px] sm:text-[32px] font-bold text-[#003F87]">{completedCredits}</div>
+          <div className="text-[11px] sm:text-[12px] text-[#94A3B8] mt-[12px]">of 133 total</div>
         </Card>
 
         <Card>
-          <div className="text-[12px] text-[#94A3B8] font-medium mb-[8px]">Semesters Left</div>
-          <div className="text-[32px] font-bold text-[#003F87]">{semestersLeft}</div>
-          <div className="text-[12px] text-[#94A3B8] mt-[12px]">Semester {currentSemester} in progress</div>
+          <div className="text-[11px] sm:text-[12px] text-[#94A3B8] font-medium mb-[8px]">Semesters Left</div>
+          <div className="text-[28px] sm:text-[32px] font-bold text-[#003F87]">{semestersLeft}</div>
+          <div className="text-[11px] sm:text-[12px] text-[#94A3B8] mt-[12px]">Semester {currentSemester} in progress</div>
         </Card>
       </div>
 
-      <div className="mb-[48px]">
-        <h2 className="text-[18px] font-bold text-[#0F172A] mb-[20px]">Graduation Progress</h2>
-        <div className="space-y-[20px]">
+      <div className="mb-[32px] sm:mb-[48px]">
+        <h2 className="text-[16px] sm:text-[18px] font-bold text-[#0F172A] mb-[16px] sm:mb-[20px]">Graduation Progress</h2>
+        <div className="space-y-[16px] sm:space-y-[20px]">
           <ProgressBar label="Overall Credits" value={completedCredits} max={133} />
           <ProgressBar label="Computing Core" value={Math.min(completedCredits, 36)} max={36} />
           <ProgressBar label="Domain Core" value={Math.min(completedCredits, 24)} max={24} />
@@ -179,8 +179,8 @@ function HomeTab() {
       </div>
 
       <div>
-        <h2 className="text-[18px] font-bold text-[#0F172A] mb-[20px]">Smart Insights</h2>
-        <div className="grid grid-cols-1 gap-[16px] lg:grid-cols-2">
+        <h2 className="text-[16px] sm:text-[18px] font-bold text-[#0F172A] mb-[16px] sm:mb-[20px]">Smart Insights</h2>
+        <div className="grid grid-cols-1 gap-[12px] sm:gap-[16px] lg:grid-cols-2">
           {insightCards.map((card, index) => (
             <InsightCard key={`${card.title}-${index}`} card={card} />
           ))}

@@ -48,7 +48,7 @@ export function OnboardingLayout() {
     <div className="min-h-screen bg-white">
       {/* Progress Indicator */}
       <div className="border-b border-[#E2E8F0] sticky top-0 bg-white z-40">
-        <div className="max-w-[1280px] mx-auto px-[24px] py-[16px]">
+        <div className="max-w-[1280px] mx-auto px-[16px] sm:px-[24px] py-[12px] sm:py-[16px]">
           <div className="flex items-center justify-between gap-[12px] mb-[12px]">
             <div className="flex gap-[8px]">
               <div className={`w-[8px] h-[8px] rounded-full ${step >= 2 ? 'bg-[#003F87]' : 'bg-[#E2E8F0]'}`}></div>
@@ -56,11 +56,11 @@ export function OnboardingLayout() {
               <div className={`w-[8px] h-[8px] rounded-full ${step >= 4 ? 'bg-[#003F87]' : 'bg-[#E2E8F0]'}`}></div>
               <div className={`w-[8px] h-[8px] rounded-full ${step >= 5 ? 'bg-[#003F87]' : 'bg-[#E2E8F0]'}`}></div>
             </div>
-            <div className="flex items-center gap-[12px]">
-              <span className="text-[12px] text-[#94A3B8] font-medium">Step {step - 1} of 4</span>
+            <div className="flex items-center gap-[8px] sm:gap-[12px]">
+              <span className="text-[11px] sm:text-[12px] text-[#94A3B8] font-medium">Step {step - 1} of 4</span>
               <button
                 onClick={handleBack}
-                className="text-[13px] text-[#003F87] hover:text-[#002D5E] font-medium cursor-pointer"
+                className="text-[12px] sm:text-[13px] text-[#003F87] hover:text-[#002D5E] font-medium cursor-pointer whitespace-nowrap"
               >
                 ← Back
               </button>
@@ -70,7 +70,7 @@ export function OnboardingLayout() {
       </div>
 
       {/* Content */}
-      <div className="max-w-[1280px] mx-auto px-[24px] py-[48px]">
+      <div className="max-w-[1280px] mx-auto px-[16px] sm:px-[24px] py-[32px] sm:py-[48px]">
         {/* Step 2: Degree Selection */}
         {step === 2 && <DegreeSelector onSelect={handleDegreeSelect} />}
 
@@ -98,19 +98,19 @@ export function OnboardingLayout() {
 export function DegreeSelector({ onSelect }) {
   return (
     <div className="animate-[fadeIn_0.2s_ease-out]">
-      <h1 className="text-[24px] font-bold text-[#0F172A] mb-[8px]">Which program are you in?</h1>
-      <p className="text-[14px] text-[#475569] mb-[32px]">Select your degree program to get personalized insights.</p>
+      <h1 className="text-[clamp(1.3rem,4vw,24px)] font-bold text-[#0F172A] mb-[8px]">Which program are you in?</h1>
+      <p className="text-[13px] sm:text-[14px] text-[#475569] mb-[24px] sm:mb-[32px]">Select your degree program to get personalized insights.</p>
 
-      <div className="grid grid-cols-2 gap-[16px] lg:grid-cols-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-[12px] sm:gap-[16px] lg:grid-cols-3">
         {Object.entries(DEGREE_MAP).map(([code, { label, icon, data }]) => (
           <button
             key={code}
             onClick={() => onSelect(code)}
-            className="border-2 border-[#E2E8F0] rounded-[12px] p-[24px] text-center hover:border-[#003F87] hover:bg-[#EEF4FF] transition-all cursor-pointer"
+            className="border-2 border-[#E2E8F0] rounded-[12px] p-[20px] sm:p-[24px] text-center hover:border-[#003F87] hover:bg-[#EEF4FF] transition-all cursor-pointer"
           >
-            <div className="text-[32px] mb-[12px]">{icon}</div>
-            <div className="text-[15px] font-medium text-[#0F172A] mb-[8px]">{label}</div>
-            <div className="text-[12px] text-[#94A3B8]">4 years · 133 credits</div>
+            <div className="text-[28px] sm:text-[32px] mb-[12px]">{icon}</div>
+            <div className="text-[14px] sm:text-[15px] font-medium text-[#0F172A] mb-[8px]">{label}</div>
+            <div className="text-[11px] sm:text-[12px] text-[#94A3B8]">4 years · 133 credits</div>
           </button>
         ))}
       </div>
@@ -123,20 +123,20 @@ export function GoalGpaSelector({ onSelect }) {
 
   return (
     <div className="animate-[fadeIn_0.2s_ease-out] max-w-[720px]">
-      <h1 className="text-[24px] font-bold text-[#0F172A] mb-[8px]">What is your target CGPA?</h1>
-      <p className="text-[14px] text-[#475569] mb-[32px]">
+      <h1 className="text-[clamp(1.3rem,4vw,24px)] font-bold text-[#0F172A] mb-[8px]">What is your target CGPA?</h1>
+      <p className="text-[13px] sm:text-[14px] text-[#475569] mb-[24px] sm:mb-[32px]">
         Choose the GPA goal you want us to optimize for.
       </p>
 
-      <div className="grid grid-cols-2 gap-[12px] mb-[32px] lg:grid-cols-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-[12px] sm:gap-[12px] mb-[32px] lg:grid-cols-3">
         {goalOptions.map(goal => (
           <button
             key={goal}
             onClick={() => onSelect(parseFloat(goal))}
-            className="border-2 border-[#E2E8F0] rounded-[12px] p-[20px] text-center hover:border-[#003F87] hover:bg-[#EEF4FF] transition-all cursor-pointer"
+            className="border-2 border-[#E2E8F0] rounded-[12px] p-[16px] sm:p-[20px] text-center hover:border-[#003F87] hover:bg-[#EEF4FF] transition-all cursor-pointer"
           >
-            <div className="text-[12px] text-[#94A3B8] font-medium mb-[8px]">Goal GPA</div>
-            <div className="text-[24px] font-bold text-[#0F172A]">{goal}</div>
+            <div className="text-[11px] sm:text-[12px] text-[#94A3B8] font-medium mb-[8px]">Goal GPA</div>
+            <div className="text-[20px] sm:text-[24px] font-bold text-[#0F172A]">{goal}</div>
           </button>
         ))}
       </div>
@@ -155,19 +155,19 @@ export function SemesterSelector({ onSelect, selectedDegree }) {
 
   return (
     <div className="animate-[fadeIn_0.2s_ease-out]">
-      <h1 className="text-[24px] font-bold text-[#0F172A] mb-[8px]">Which semester are you in?</h1>
-      <p className="text-[14px] text-[#475569] mb-[32px]">
+      <h1 className="text-[clamp(1.3rem,4vw,24px)] font-bold text-[#0F172A] mb-[8px]">Which semester are you in?</h1>
+      <p className="text-[13px] sm:text-[14px] text-[#475569] mb-[24px] sm:mb-[32px]">
         We'll only ask for grades from completed semesters.
       </p>
 
-      <div className="grid grid-cols-2 gap-[12px] mb-[32px] lg:grid-cols-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-[12px] mb-[32px] lg:grid-cols-4">
         {Array.from({ length: 8 }, (_, i) => i + 1).map(sem => (
           <button
             key={sem}
             onClick={() => onSelect(sem)}
-            className="border-2 border-[#E2E8F0] rounded-[8px] py-[12px] px-[16px] font-medium text-[14px] hover:border-[#003F87] hover:bg-[#EEF4FF] transition-all cursor-pointer"
+            className="border-2 border-[#E2E8F0] rounded-[8px] py-[10px] sm:py-[12px] px-[14px] sm:px-[16px] font-medium text-[13px] sm:text-[14px] hover:border-[#003F87] hover:bg-[#EEF4FF] transition-all cursor-pointer"
           >
-            Semester {sem}
+            Sem {sem}
           </button>
         ))}
       </div>
