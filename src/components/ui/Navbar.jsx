@@ -26,7 +26,7 @@ export function Navbar({ onBack = null, onReset = null, showBack = false, showRe
 
         <div className="flex items-center gap-[8px] sm:gap-[10px] ml-auto min-w-0">
           {degree && (
-            <span className=\"hidden sm:inline text-[14px] text-[#475569] whitespace-nowrap mr-[4px]\">
+              <span className="hidden sm:inline text-[14px] text-[#475569] whitespace-nowrap mr-[4px]">
               {degreeMap[degree] || degree}
             </span>
           )}
