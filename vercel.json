@@ -1,14 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "package.json", "use": "@vercel/static-build" }
-  ],
   "routes": [
-    { "src": "^/$", "dest": "/prerendered/index.html" },
-    { "src": "^/onboarding/?$", "dest": "/prerendered/_onboarding.html" },
-    { "src": "^/dashboard/?$", "dest": "/prerendered/_dashboard.html" },
-    { "src": "^/degree/(?<slug>[^/]+)/?$", "dest": "/prerendered/_degree_$slug.html" },
-    { "src": "^(.*)$", "dest": "/$1" }
+    { "handle": "filesystem" },
+    { "src": "^/(.*)$", "dest": "/index.html" }
   ],
   "headers": [
     {
