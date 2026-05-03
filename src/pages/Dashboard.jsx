@@ -1,4 +1,4 @@
-import { useContext, useState, useMemo } from 'react'
+import { useContext, useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { StudentContext } from '../context/StudentContext'
 import { DEGREE_MAP } from '../utils/degrees'
@@ -33,6 +33,12 @@ export function Dashboard() {
   const navigate = useNavigate()
   const { degree, currentSemester, completedGrades, goalGpa, resetAll } = useContext(StudentContext)
   const [activeTab, setActiveTab] = useState('home')
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+    }
+  }, [activeTab])
 
   if (!degree) {
     navigate('/')
