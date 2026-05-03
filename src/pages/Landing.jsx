@@ -96,7 +96,7 @@ export function LandingPage() {
       </nav>
 
       {/* HERO */}
-      <main id="main-content" className="pt-[64px] min-h-screen grid grid-cols-1 lg:grid-cols-2 items-start lg:items-center w-full max-w-[1200px] mx-auto px-[16px] sm:px-[24px] lg:px-[48px] py-[40px] sm:py-[60px] lg:py-[140px_48px_80px] gap-[32px] sm:gap-[48px] lg:gap-[80px]">
+      <main id="main-content" className="pt-[64px] min-h-0 lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 items-start lg:items-center w-full max-w-[1200px] mx-auto px-[16px] sm:px-[24px] lg:px-[48px] py-[40px] sm:py-[60px] lg:py-[140px_48px_80px] gap-[32px] sm:gap-[48px] lg:gap-[80px]">
         {/* LEFT */}
         <div className="hero-left w-full">
           <div className="opacity-0 translate-y-[20px] animate-up mt-[0px]" style={{ animationDelay: '0.1s' }}>
