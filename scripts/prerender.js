@@ -11,6 +11,12 @@ import { spawn } from 'child_process'
 import http from 'http'
 import { chromium } from 'playwright-chromium'
 
+// Skip prerender when running inside Vercel build environment
+if (process.env.VERCEL) {
+  console.log('Detected Vercel build environment — skipping prerender to avoid Playwright system dependency issues.')
+  process.exit(0)
+}
+
 const PORT = 5174
 const HOST = `http://localhost:${PORT}`
 function listDegreeRoutes() {
